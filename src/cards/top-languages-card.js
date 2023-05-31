@@ -165,7 +165,7 @@ const donutCenterTranslation = (totalLangs) => {
 const trimTopLanguages = (topLangs, hide, langs_count) => {
   let langs = Object.values(topLangs);
   let langsToHide = {};
-  let langsCount = clampValue(parseInt(langs_count), 1, 10);
+  let langsCount = clampValue(parseInt(langs_count), 1, 30);
 
   // populate langsToHide map for quick lookup
   // while filtering out
@@ -421,7 +421,7 @@ const renderDonutVerticalLayout = (langs, totalLanguageSize) => {
 
     circles.push(`
       <g class="stagger" style="animation-delay: ${delay}ms">
-        <circle 
+        <circle
           cx="150"
           cy="100"
           r="${radius}"
